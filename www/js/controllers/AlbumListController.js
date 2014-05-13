@@ -73,25 +73,27 @@ define([
          }, 
 
          _addAlbums : function(data){
+            // console.log(data)
             //empty existing domNodes
             domConstruct.empty(this.albumListFirst);
             domConstruct.empty(this.albumListLast);
 
-            for (var i = 0; i < data.length; i++){
-                var item = data[i], 
-                rawDate = this.createDate(item.releaseDate),
+            for (var i = 0; i < data.albums.length; i++){
+                var item = data.albums[i], 
+                rawDate = this.createDate(item.released),
                 formattedDate = this.formatDate(rawDate), 
                 currentDate = new Date();
 
                 var listItem = new AlbumListItem({
-                    bandName : item.bandName, 
-                    albumName : item.albumName, 
+                    bandName : item.artist_name, 
+                    albumName : item.album_name, 
                     releaseDate : formattedDate, 
                     delegate : this
                 });
                 domAttr.set(listItem.domNode, "data-index", i);
                 // on(listItem, 'click', lang.hitch(this, "_handleDetailClick"));
 
+                console.log('greater than today: ', rawDate)
                 //split based on date:
                 if (rawDate >= currentDate){
                     domConstruct.place(listItem.domNode, this.albumListFirst, "last");
@@ -102,9 +104,10 @@ define([
          },
 
          createDate : function(date){
-            var year = date['year'], 
-            month = date['month'], 
-            day = date['day'];
+            var dateArray = date.split('-');
+            var year = dateArray[0], 
+            month = dateArray[1], 
+            day = dateArray[2];
             return new Date(year, month-1, day);
          },
 

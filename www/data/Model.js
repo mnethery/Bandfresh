@@ -54,6 +54,7 @@ define([
 		getMyAlbumList : function(params, success, error) {
 			return this.ajax({
 					url: "./data/fixtures/myAlbumList.json",
+					// url: "http://data.bandfresh.com/albums"
 					method : "GET",
 					success : success,
 					error : error,
@@ -65,7 +66,8 @@ define([
 
 		getPopularAlbumList : function(params, success, error) {
 			return this.ajax({
-					url: "./data/fixtures/popAlbumList.json",
+					// url: "./data/fixtures/popAlbumList.json",
+					url: "http://data.bandfresh.com/albums",
 					method : "GET",
 					success : success,
 					error : error,

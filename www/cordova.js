@@ -6363,7 +6363,7 @@ window.cordova = require('cordova');
 
 
 /**UNCOMMENT THIS FOR PRODUCTION**/
-require('cordova/channel').onNativeReady.fire();
+//require('cordova/channel').onNativeReady.fire();
 
 // file: lib/scripts/plugin_loader.js
 

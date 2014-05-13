@@ -1,47 +1,42 @@
-[
+{
+  "albums": [
     {
-        "bandName": "Yellowcard",
-        "albumName": "Paper Walls",
-        "releaseDate": {
-        	"year":2014, 
-        	"month":1, 
-        	"day":6
-        }
-    },
-    {
-        "bandName": "Muse",
-        "albumName": "Absolution",
-        "releaseDate": {
-        	"year":2014, 
-        	"month":2, 
-        	"day":8
-        }
-    },
-    {
-        "bandName": "Jimmy Eat World",
-        "albumName": "Clarity",
-        "releaseDate": {
-        	"year":2014, 
-        	"month":9, 
-        	"day":17
-        }
-    },
-    {
-        "bandName": "Matt Nathanson",
-        "albumName": "Bulltproof Weeks",
-        "releaseDate": {
-        	"year":2014, 
-        	"month":9, 
-        	"day":15
-        }
+      "id": "2",
+      "released": "2014-07-17",
+      "artist_id": "3",
+      "artist_name": "Yellowcard",
+      "album_name": "Your mom's dancing",
+      "artwork": "",
+      "purchase": ""
     }, 
     {
-        "bandName": "Nine Days",
-        "albumName": "So Happily Unsatisfied",
-        "releaseDate": {
-        	"year":2014, 
-        	"month":9, 
-        	"day":12
-        }
+      "id": "2",
+      "released": "2014-08-14",
+      "artist_id": "3",
+      "artist_name": "Matt Nathanson",
+      "album_name": "BulletProff weeks",
+      "artwork": "",
+      "purchase": ""
+    }, 
+    {
+      "id": "2",
+      "released": "2007-07-17",
+      "artist_id": "3",
+      "artist_name": "Jimmy Eat World",
+      "album_name": "Clarity",
+      "artwork": "",
+      "purchase": ""
+    }, 
+    {
+      "id": "2",
+      "released": "2007-07-17",
+      "artist_id": "3",
+      "artist_name": "Muse",
+      "album_name": "Absolution",
+      "artwork": "",
+      "purchase": ""
     }
-]
+  ],
+  "page": 1,
+  "limit": 20
+}
