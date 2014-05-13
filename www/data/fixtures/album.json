@@ -1,0 +1,64 @@
+{
+        "artistName": "Yellowcard",
+        "albumName": "Paper Walls",
+        "pictureUrl": "img/paperwalls.jpg",
+        "releaseDate": {
+        	"year":2014, 
+        	"month":1, 
+        	"day":6
+        }, 
+        "tracks" : [
+            {
+                "title": "The Takedown", 
+                "length": "2:57"
+            },
+            {
+                "title": "Fighting", 
+                "length": "2:57"
+            },
+            {
+                "title": "Shrink the World", 
+                "length": "2:57"
+            },
+            {
+                "title": "Keeper", 
+                "length": "2:57"
+            },
+            {
+                "title": "Light Up the Sky", 
+                "length": "2:57"
+            },
+            {
+                "title": "Shadows and Regrets", 
+                "length": "2:57"
+            },
+            {
+                "title": "Five becomes Four", 
+                "length": "2:57"
+            },
+            {
+                "title": "Afraid", 
+                "length": "2:57"
+            },
+            {
+                "title": "DateLine", 
+                "length": "2:57"
+            },
+            {
+                "title": "Bobbie", 
+                "length": "2:57"
+            },
+            {
+                "title": "You and Me and One Spotlight", 
+                "length": "2:57"
+            },
+            {
+                "title": "Cut me Mick", 
+                "length": "2:57"
+            },
+            {
+                "title": "Paper Walls", 
+                "length": "2:57"
+            }
+        ]
+}

@@ -1,0 +1,24 @@
+<div class='artist-list-container container'>
+
+	<div class="nav-view">
+		<a class='nav-option-left' href='#albums' data-transition="slide" data-direction="reverse">Albums</a>
+		<div class='nav-option-center'>Artists</div>
+		<div class='nav-option-right'></div>
+	</div>
+
+	<div class="artist-list-view">
+		<div class='search-container'>
+			<div class='search-bar'>
+				<input type='email' placeholder='Search...'/>
+				<i class='glyphicon glyphicon-search'></i>
+			</div>
+		</div>
+		<div class="artist-list-scrollview scrollable" data-dojo-attach-point="artistList"></div>
+	</div>
+
+	<div class="footer" data-dojo-attach-point='artistFooter'>
+		<div class="footer-btn selected left" data-dojo-attach-event="onclick:_handleMyToggleList" data-dojo-attach-point="followBtn">Following</div>
+		<div class="footer-btn right" data-dojo-attach-event="onclick:_handleAllToggleList" data-dojo-attach-point="allBtn">Browse All</div>
+	</div>
+
+</div>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+        <!--jquery mobile nav bar stuff-->
+        <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" /> -->
+        <link rel="stylesheet" href="./css/jquery.mobile-1.2.0.css" />
+        <script src="./utils/jquery-1.7.2.min.js"></script>
+        <script src="./utils/jquery.mobile-1.2.0.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/halflings.css" />
+        <link rel="stylesheet" type="text/css" href="css/animations.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+        <title>Bandfresh</title>
+    </head>
+    <body>
+        <div id="newapp"></div>
+
+        <!--ALBUM FLOW-->
+        <div data-role="page" id="albums">
+            <div id="albumsSubView"></div>
+        </div>
+        <div data-role="page" id="albumDetail">
+            <div id="albumDetailSubView"></div>
+        </div>
+        
+        <!--ARTIST FLOW-->
+        <div data-role="page" id="artists">
+            <div id="artistsSubView"></div>
+        </div>
+        <div data-role="page" id="artistDetail">
+            <div id="artistDetailSubView"></div>
+        </div>
+
+        <!--FRIEND FLOW-->
+        <div data-role="page" id="friends">
+            <div id="friendsSubView"></div>
+        </div>
+        <div data-role="page" id="friendDetail">
+            <div id="friendDetailSubView"></div>
+        </div>
+
+        <div data-role="page" id="settings">
+            <div id="settingsSubView"></div>
+        </div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="./dojo/dojo.js"></script>
+        <script type='text/javascript'>
+            require(["js/app","js/controllers/AlbumListController", "js/controllers/ArtistListController", "js/controllers/FriendListController", "js/controllers/SettingsController", "js/controllers/AlbumDetailController", "js/controllers/ArtistDetailController", "js/controllers/FriendDetailController", "dojo/domReady!"], function(app, albums, artists, friends, settings, albumDetail, artistDetail, friendDetail) {
+                        this.newapp = new app({}, "newapp");
+                        newapp.startup();
+
+                        //ALBUM FLOW//
+                        this.albumsView = new albums({delegate:this}, 'albumsSubView');
+                        this.albumsView.startup();
+                        this.albumDetail = new albumDetail({delegate:this}, 'albumDetailSubView');
+                        this.albumDetail.startup();
+        
+                        //ARTIST FLOW//
+                        this.artistsView = new artists({delegate:this}, 'artistsSubView');
+                        this.artistsView.startup();
+                        this.artistDetail = new artistDetail({delegate:this}, 'artistDetailSubView');
+                        this.artistDetail.startup();
+
+                        //FRIEND FLOW//
+                        this.friendsView = new friends({delegate:this}, 'friendsSubView');
+                        this.friendsView.startup();
+                        this.friendDetail = new friendDetail({delegate:this}, 'friendDetailSubView');
+                        this.friendDetail.startup();
+
+                        this.settingsView = new settings({}, 'settingsSubView');
+                        this.settingsView.startup();
+                    });
+        </script>
+
+       <!--  <div class="app" data-dojo-type="app" id="newapp">
+            <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+        </div> -->
+
+        <!--<script type="text/javascript">-->
+        <!-- //     // document.addEventListener("deviceready", function() {
+        //         require(["js/app", "dojo/domReady!"], function(app) {
+        //             var newApp = new app({}, 'newapp');
+        //             newApp.startup();
+        //         });
+
+        //     // require(["js/controllers/AlbumListController", "dojo/domReady!"], function(app) {
+        //     //         var newApp = new app({}, 'newapp');
+        //     //         newApp.startup();
+        //     //     });
+
+
+        //     // }); -->
+        <!--</script>-->
+
+    </body>
+</html>

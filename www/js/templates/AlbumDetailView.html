@@ -1,0 +1,21 @@
+<div class='album-detail-container container'>
+
+	<div class="nav-view">
+		<a class='nav-option-left' href='#' data-transition="slide" data-direction="reverse" data-dojo-attach-point='router'><i class='icon-chevron-left icon-white'></i>Back</a>
+	</div>
+
+	<div class="album-list-view">
+		<div class="album-detail-header">
+			<img class="shadow" data-dojo-attach-point="albumImg" src="img/blank.jpg" />
+			<div class="album-detail-album-name" data-dojo-attach-point="albumName"></div>
+			<div class="album-detail-artist-name" data-dojo-attach-point="artistName"></div>
+			<div class="album-detail-album-date" data-dojo-attach-point="releaseDate"></div>
+		</div>
+
+		<div class="album-detail-track-list scrollable" data-dojo-attach-point="trackList"></div>
+	</div>
+
+	<div class="footer">
+		<div class="footer-btn" data-dojo-attach-event="onclick:_handleBuyNowClick" data-dojo-attach-point="followBtn">Buy Now</div>
+	</div>
+</div>

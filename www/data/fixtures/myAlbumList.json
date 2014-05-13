@@ -1,0 +1,47 @@
+[
+    {
+        "bandName": "Yellowcard",
+        "albumName": "Paper Walls",
+        "releaseDate": {
+        	"year":2014, 
+        	"month":1, 
+        	"day":6
+        }
+    },
+    {
+        "bandName": "Muse",
+        "albumName": "Absolution",
+        "releaseDate": {
+        	"year":2014, 
+        	"month":2, 
+        	"day":8
+        }
+    },
+    {
+        "bandName": "Jimmy Eat World",
+        "albumName": "Clarity",
+        "releaseDate": {
+        	"year":2014, 
+        	"month":9, 
+        	"day":17
+        }
+    },
+    {
+        "bandName": "Matt Nathanson",
+        "albumName": "Bulltproof Weeks",
+        "releaseDate": {
+        	"year":2014, 
+        	"month":9, 
+        	"day":15
+        }
+    }, 
+    {
+        "bandName": "Nine Days",
+        "albumName": "So Happily Unsatisfied",
+        "releaseDate": {
+        	"year":2014, 
+        	"month":9, 
+        	"day":12
+        }
+    }
+]

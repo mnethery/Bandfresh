@@ -1,0 +1,28 @@
+<div class='album-list-container container'>
+
+	<div class="nav-view">
+		<a class='nav-option-left' href='#friends' data-transition="slide" data-direction="reverse">Friends</a>
+		<div class='nav-option-center'>Albums</div>
+		<!-- <div class='nav-option-right'>Artists</div> -->
+		<a class='nav-option-right' href="#artists" data-transition="slide">Artists</a>
+	</div>
+
+	<div class="album-list-view">
+		<div data-dojo-attach-point='albumList' class='scrollable'>
+
+			<div class="album-list-scrollview" data-dojo-attach-point="albumListFirst"></div>
+			
+			<hr><div class="album-list-today">
+				<span class='album-list-text'>Today</span>
+			</div>
+	
+			<div class="album-list-scrollview" data-dojo-attach-point="albumListLast"></div>
+			
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="footer-btn selected left" data-dojo-attach-event="onclick:_handleMyToggleList" data-dojo-attach-point="followBtn">Following</div>
+		<div class="footer-btn right" data-dojo-attach-event="onclick:_handlePopularToggleList" data-dojo-attach-point="popularBtn">Popular</div>
+	</div>
+</div>

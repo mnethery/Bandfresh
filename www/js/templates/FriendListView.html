@@ -1,0 +1,23 @@
+<div class='friend-list-container container'>
+
+	<div class="nav-view">
+		<a class='nav-option-left' href='#settings' data-transition="slide" data-direction="reverse">Settings</a>
+		<div class='nav-option-center'>Friends</div>
+		<a class='nav-option-right' href="#albums" data-transition="slide">Albums</a>
+	</div>
+
+	<div class="friend-list-view">
+		<div class='search-container'>
+			<div class='search-bar'>
+				<input type='email' placeholder='Search...'/>
+				<i class='glyphicon glyphicon-search'></i>
+			</div>
+		</div>
+		<div class="friend-list-scrollview scrollable" data-dojo-attach-point="friendList"></div>
+	</div>
+
+	<div class="footer" data-dojo-attach-point='friendFooter'>
+		<div class="footer-btn selected left" data-dojo-attach-event="onclick:_handleNameToggleList" data-dojo-attach-point="nameBtn">By Name</div>
+		<div class="footer-btn right" data-dojo-attach-event="onclick:_handleSimilarToggleList" data-dojo-attach-point="similarBtn">By Similarity</div>
+	</div>
+</div>

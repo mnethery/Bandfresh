@@ -1,0 +1,34 @@
+{
+        "friendName": "Chris Bigelow",
+        "commonNum": 127,
+        "pictureUrl": "img/yeti.jpg",
+        "artists" : [
+            {
+                "name": "The Dangerous Summer"
+            },
+            {
+                "name": "The Rocket Summer"
+            },
+            {
+                "name": "The Veronicas"
+            },
+            {
+                "name": "Jimmy Eat World"
+            },
+            {
+                "name": "Matt Wertz"
+            },
+            {
+                "name": "Versa Emerge"
+            }, 
+            {
+                "name": "Jimmy Eat World"
+            },
+            {
+                "name": "Matt Wertz"
+            },
+            {
+                "name": "Yeti Rocketeers"
+            }
+        ]
+}

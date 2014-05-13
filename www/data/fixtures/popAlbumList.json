@@ -1,0 +1,47 @@
+[
+    {
+        "bandName": "Katy Perry",
+        "albumName": "Your Mom's House",
+        "releaseDate": {
+        	"year":2014, 
+        	"month":2, 
+        	"day":7
+        }
+    },
+    {
+        "bandName": "Jay-Z",
+        "albumName": "Thug livin'",
+        "releaseDate": {
+        	"year":2014, 
+        	"month":2, 
+        	"day":9
+        }
+    },
+    {
+        "bandName": "South African Guy with a really long name",
+        "albumName": "Typical",
+        "releaseDate": {
+        	"year":2014, 
+        	"month":3, 
+        	"day":17
+        }
+    },
+    {
+        "bandName": "Ellie Goulding",
+        "albumName": "Give it up",
+        "releaseDate": {
+        	"year":2014, 
+        	"month":11, 
+        	"day":10
+        }
+    }, 
+    {
+        "bandName": "Lana Del Rey",
+        "albumName": "I'm so hot. So hot.",
+        "releaseDate": {
+        	"year":2014, 
+        	"month":9, 
+        	"day":12
+        }
+    }
+]
